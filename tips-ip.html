@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPAddressNow - Tips</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="icon" type="image/x-icon"> 
+
+<style>
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-toggler,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links div {
+    margin-right: 20px;
+}
+
+  .info {
+      margin-bottom: 20px;
+  }
+
+  .code-container {
+      background-color: #333;
+      border-radius: 5px;
+      padding: 20px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      position: relative;
+  }
+
+  pre {
+      margin: 0;
+      color: #f47;
+  }
+
+  .code-container pre code {
+      background-color: #333;
+      color: #ff00ff;
+      padding: 0;
+      border: none;
+      white-space: pre-wrap;
+  }
+
+  .icon {
+      margin-right: 10px;
+  }
+
+  .separator {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="icon-title.png" alt="IPAddressNow.com Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view-ip.html"><i class="bi bi-bullseye"></i> View IP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info-ip.html"><i class="bi bi-info-circle-fill"></i> Info IP</a>
+                    </li>
+                   <li class="nav-item">
+    <a class="nav-link" href="tips-ip.html">
+        <i class="bi bi-lightbulb-fill"></i> Tips IP
+    </a>
+</li>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="info">
+        <h1><i class="fas fa-code icon"></i>IPAddressNow - Tips</h1>
+        <p>Below are some useful commands for checking IP information on various operating systems.</p>
+    </div>
+
+  <div class="d-flex justify-content-center mb-4">
+    <a href="#windows" class="btn btn-primary mr-3">
+        <i class="fab fa-windows"></i> Windows
+    </a>
+    <a href="#macos" class="btn btn-primary mr-3">
+        <i class="fab fa-apple"></i> macOS
+    </a>
+    <a href="#linux" class="btn btn-primary">
+        <i class="fab fa-linux"></i> Linux
+    </a>
+
+    </div>
+<div id="windows" class="code-container">
+    <h2><i class="fab fa-windows icon"></i>Windows Commands</h2>
+    <div>
+        <p><strong>Command to check IP configuration:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig</code></pre>
+        <p>This command displays the IP configuration for all network interfaces on a Windows system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to release IP address:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /release</code></pre>
+        <p>This command releases the IP address for all network interfaces on a Windows system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to renew IP address:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /renew</code></pre>
+        <p>This command renews the IP address for all network interfaces on a Windows system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display DNS resolver cache:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /displaydns</code></pre>
+        <p>This command displays the contents of the DNS client resolver cache.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to flush DNS resolver cache:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /flushdns</code></pre>
+        <p>This command purges the DNS client resolver cache, releasing all cached DNS entries.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to reset TCP/IP stack:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netsh int ip reset</code></pre>
+        <p>This command resets the TCP/IP stack back to default settings.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display network configuration:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netsh interface ip show config</code></pre>
+        <p>This command shows detailed network configuration information.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show DHCP configuration:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /all</code></pre>
+        <p>This command displays detailed DHCP configuration information for all interfaces.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to release and renew DHCP IP:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig /release && ipconfig /renew</code></pre>
+        <p>This command releases the current DHCP configuration and renews it.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show network connections:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netstat -nao</code></pre>
+        <p>This command displays all active network connections and listening ports.</p>
+    </div>
+</div>
+
+
+    <div class="separator"></div>
+
+  <div id="macos" class="code-container">
+    <h2><i class="fab fa-apple icon"></i>macOS Commands</h2>
+
+    <div>
+        <p><strong>Command to check network interface details:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ifconfig</code></pre>
+        <p>This command displays the configuration details of network interfaces on a Mac system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show IP address of a specific interface (e.g., en0):</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ipconfig getifaddr en0</code></pre>
+        <p>This command shows the IP address of the specified network interface on a Mac system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show current Wi-Fi network details:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I</code></pre>
+        <p>This command shows detailed information about the current Wi-Fi network.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display all available Wi-Fi networks:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s</code></pre>
+        <p>This command scans and lists all Wi-Fi networks in range.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to flush DNS cache:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">sudo killall -HUP mDNSResponder</code></pre>
+        <p>This command flushes the DNS cache on a Mac system.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to ping a host and check connectivity:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ping google.com</code></pre>
+        <p>This command pings a remote server (e.g., Google) to check network connectivity.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to check active connections:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netstat -an</code></pre>
+        <p>This command displays active network connections.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to reset the network interface (example for en0):</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">sudo ifconfig en0 down && sudo ifconfig en0 up</code></pre>
+        <p>This command resets the specified network interface by taking it down and bringing it back up.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display routing table:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netstat -rn</code></pre>
+        <p>This command shows the routing table of the system, displaying how packets are routed.</p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show network statistics:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">nettop</code></pre>
+        <p>This command provides real-time network statistics, showing traffic details for all interfaces.</p>
+    </div>
+</div>
+
+
+  <div id="linux" class="code-container">
+    <h2><i class="fab fa-linux icon"></i>Linux Commands</h2>
+    
+    <div>
+        <p><strong>Command to show IP address information:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ip a</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show DNS information:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">cat /etc/resolv.conf</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show routing table:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ip route</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to show network statistics:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">netstat -s</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display active network connections:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ss -tuln</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to test network connectivity:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ping google.com</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to display current firewall rules:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">sudo iptables -L</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to flush DNS cache:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">sudo systemd-resolve --flush-caches</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to view network interface configuration:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">ifconfig</code></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <div>
+        <p><strong>Command to set a static IP address:</strong></p>
+        <pre><code class="bash" style="color: #ff00ff;" onclick="copyToClipboard(this)">sudo ip addr add 192.168.1.100/24 dev eth0</code></pre>
+    </div>
+
+    <div class="separator"></div>
+</div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-info text-left">
+                    <a href="privacy.html" class="footer-link">Privacy</a> |
+                    <a href="terms.html" class="footer-link">Terms of Use</a>
+                </div>
+                <p class="text-left">&copy; IPAddressNow.com - 2024</p>
+            </div>
+  <div class="col-md-6">
+    <div class="footer-links text-right">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#languageModal">
+            <i class="bi bi-translate"></i> English
+        </button>
+                </div>
+            </div>
+        </div>
+  </footer>
+
+<div class="modal fade" id="languageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Select language</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="btn btn-outline-primary btn-sm btn-block active text-white">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+  
+<script>
+     function copyToClipboard(element) {
+        var text = element.innerText;
+        var tempInput = document.createElement("textarea");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Copied to clipboard: " + text);
+    }
+   function toggleContent(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
