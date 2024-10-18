@@ -348,7 +348,6 @@ async function fetchLocation(ip) {
         const response = await fetch(`https://get.geojs.io/v1/ip/geo/${ip}.json`);
         const data = await response.json();
         document.getElementById('location').innerText = `Your Location: ${data.city}, ${data.region}, ${data.country}`;
-        // Inicializar el mapa con la ubicación proporcionada
         initMap(data.latitude, data.longitude);
     } catch (error) {
         console.error('Error fetching location:', error);
