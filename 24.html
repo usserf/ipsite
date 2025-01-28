@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios Conectados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    #userCount {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Usuarios Conectados en Tiempo Real</h1>
+  <p id="userCount">0</p>
+
+  <script>
+    const socket = io("https://replit.com/@4g3g434g3/NonstopMotionlessPackage#index.js");
+
+    // Escuchar actualizaciones del número de usuarios
+    socket.on("userCount", (count) => {
+      document.getElementById("userCount").textContent = count;
+    });
+  </script>
+</body>
+</html>
